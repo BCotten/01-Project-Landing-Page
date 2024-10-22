@@ -1,0 +1,236 @@
+/* CSS varibles */
+
+:root {
+  /* Font families */
+  --ff-base: "Courier New", Courier, monospace;
+  --ff-secondary: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  /* Font Sizes */
+  --fs-100: 0.25rem;
+  --fs-200: 0.5rem;
+  --fs-300: 0.75rem;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.125rem;
+  --fs-700: 1.25rem;
+  --fs-800: 1.5625rem;
+  --fs-900: 2rem;
+  --fs-1000: 2.25rem;
+  --fs-1100: 4.375rem;
+
+  /* Font weights */
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-850: 850;
+  --fw-1000: 1000;
+
+  /* Colors Primary */
+
+  --clr-primary: #f5e7de;
+  --clr-secondary: #f2bfa4;
+
+  /* Colors neutral */
+
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: #f2f2f2;
+  --clr-neutral-300: #cccccc;
+  --clr-neutral-400: #646d76;
+  --clr-neutral-500: #666666;
+  --clr-neutral-600: #333333;
+  --clr-neutral-700: #383e4c;
+  --clr-neutral-800: #262628;
+  --clr-neutral-900: #000000;
+
+  /* Border Radius */
+
+  --border-radius-300: 0.5rem;
+  --border-radius-400: 0.75rem;
+  --border-radius-500: 1rem;
+  --border-radius-600: 1.25rem;
+  --border-radius-800: 1.5rem;
+  --border-radius-900: 1.75rem;
+  --border-radius-1000: 2rem;
+}
+
+/* CSS varibles */
+
+/*
+  CSS RESEST By Andy Bell
+  https://piccalil.li/blog/a-more-modern-css-reset/
+  CSS RESEST Start
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*
+  CSS RESEST By Andy Bell
+  https://piccalil.li/blog/a-more-modern-css-reset/
+  CSS RESEST End
+*/
+
+/* CUBE CSS */
+
+/*
+  Composition
+  Layout styles for broader sections of the page (like containers, flexbox setups, grid systems).
+  Positioning elements (like alignment, spacing, etc.).
+
+  example:
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/*
+  Utlity
+  Simple, reusable styles (like margins, padding, colors, typography).
+  Helpers for alignment, display, and visibility.
+  examples:
+*/
+
+u-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.u-padding {
+  padding: 10px;
+}
+
+.u-bg-primary {
+  background-color: #007bff;
+}
+
+.u-text-white {
+  color: #fff;
+}
+
+/*
+  Block
+  - Self-contained components (like cards, buttons, forms).
+  - Styles specific to the component's base structure.
+*/
+
+.b-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/*
+  Element
+  - Subparts of a Block (like card header, footer, or button icon).
+  - Specific styles for elements within a Block.
+*/
+
+.b-card__header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.b-card__body {
+  padding: 10px;
+}
+
+.b-card__footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: right;
+}
