@@ -90,6 +90,12 @@ dd {
   margin-block-end: 0;
 }
 
+/* add inline-block */
+
+a {
+  display: inline-block;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
@@ -162,25 +168,27 @@ textarea:not([rows]) {
 /* CUBE CSS */
 
 /*
-  Composition
-  Layout styles for broader sections of the page (like containers, flexbox setups, grid systems).
-  Positioning elements (like alignment, spacing, etc.).
+  -- Composition
+  - Layout styles for broader sections of the page (like containers, flexbox setups,    grid systems).
+  - Positioning elements (like alignment, spacing, etc.).
 
-  example:
 */
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
+.grid-300 {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.stack-500 > * + * {
+  margin-block-start: 1rem;
 }
 
 /*
-  Utlity
-  Simple, reusable styles (like margins, padding, colors, typography).
-  Helpers for alignment, display, and visibility.
-  examples:
+  -- Utlity
+  - Simple, reusable styles (like margins, padding, colors, typography).
+  - Helpers for alignment, display, and visibility.
+    examples:
 */
 
 u-margin-bottom {
@@ -200,7 +208,7 @@ u-margin-bottom {
 }
 
 /*
-  Block
+  -- Block
   - Self-contained components (like cards, buttons, forms).
   - Styles specific to the component's base structure.
 */
@@ -214,7 +222,7 @@ u-margin-bottom {
 }
 
 /*
-  Element
+  -- Element
   - Subparts of a Block (like card header, footer, or button icon).
   - Specific styles for elements within a Block.
 */
