@@ -2,9 +2,8 @@
 
 :root {
   /* Font families */
-  --ff-base: "Courier New", Courier, monospace;
-  --ff-secondary: 'Permanent Marker', cursive;
-
+  --ff-base: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --ff-secondary: "Permanent Marker", cursive;
 
   /* Font Sizes */
   --step--2: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
@@ -28,17 +27,6 @@
   --space-2xl: clamp(4rem, 3.6522rem + 1.7391vw, 5rem);
   --space-3xl: clamp(6rem, 5.4783rem + 2.6087vw, 7.5rem);
 
-  /* One-up pairs */
-
-  --space-3xs-2xs: clamp(0.25rem, 0.1196rem + 0.6522vw, 0.625rem);
-  --space-2xs-xs: clamp(0.5rem, 0.3478rem + 0.7609vw, 0.9375rem);
-  --space-xs-s: clamp(0.75rem, 0.5761rem + 0.8696vw, 1.25rem);
-  --space-s-m: clamp(1rem, 0.6957rem + 1.5217vw, 1.875rem);
-  --space-m-l: clamp(1.5rem, 1.1522rem + 1.7391vw, 2.5rem);
-  --space-l-xl: clamp(2rem, 1.3913rem + 3.0435vw, 3.75rem);
-  --space-xl-2xl: clamp(3rem, 2.3043rem + 3.4783vw, 5rem);
-  --space-2xl-3xl: clamp(4rem, 2.7826rem + 6.087vw, 7.5rem);
-
   /* Font weights */
 
   --fw-500: 500;
@@ -48,62 +36,22 @@
 
   /* Colors Primary */
 
-  --clr-primary: #f5e7de;
-  --clr-secondary: #f2bfa4;
+  --clr-cool-gray: #8895b3ff;
+  --clr-mauve: #bbadffff;
+  --clr-mauve-2: #dab6fcff;
 
   /* Colors neutral */
 
   --clr-neutral-100: #ffffff;
-  --clr-neutral-200: #f2f2f2;
-  --clr-neutral-300: #cccccc;
-  --clr-neutral-400: #646d76;
-  --clr-neutral-500: #666666;
-  --clr-neutral-600: #333333;
-  --clr-neutral-700: #383e4c;
-  --clr-neutral-800: #262628;
   --clr-neutral-900: #000000;
-
-  /* Colors Bootstrap */
-
-  --clr-bs-blue: #0d6efd;
-  --clr-bs-indigo: #6610f2;
-  --clr-bs-purple: #6f42c1;
-  --clr-bs-pink: #d63384;
-  --clr-bs-red: #dc3545;
-  --clr-bs-orange: #fd7e14;
-  --clr-bs-yellow: #ffc107;
-  --clr-bs-green: #198754;
-  --clr-bs-teal: #20c997;
-  --clr-bs-cyan: #0dcaf0;
-  --clr-bs-white: #fff;
-  --clr-bs-gray: #6c757d;
-  --clr-bs-gray-dark: #343a40;
-  --clr-bs-primary: #0d6efd;
-  --clr-bs-secondary: #6c757d;
-  --clr-bs-success: #198754;
-  --clr-bs-info: #0dcaf0;
-  --clr-bs-warning: #ffc107;
-  --clr-bs-danger: #dc3545;
-  --clr-bs-light: #f8f9fa;
-  --clr-bs-dark: #212529;
-
-  /* Border Radius */
-
-  --border-radius-300: 0.5rem;
-  --border-radius-400: 0.75rem;
-  --border-radius-500: 1rem;
-  --border-radius-600: 1.25rem;
-  --border-radius-800: 1.5rem;
-  --border-radius-900: 1.75rem;
-  --border-radius-1000: 2rem;
 }
 
-/* CSS varibles */
+/* CSS variables */
 
 /*
-  CSS RESEST By Andy Bell
+  CSS RESET By Andy Bell
   https://piccalil.li/blog/a-more-modern-css-reset/
-  CSS RESEST Start
+  CSS RESET Start
 */
 
 /* Box sizing rules */
@@ -180,6 +128,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
+  min-width: 100%;
   max-width: 100%;
   display: block;
 }
@@ -193,7 +142,7 @@ select {
   font-size: inherit;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
+/* Make sure textarea without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
 }
@@ -204,9 +153,9 @@ textarea:not([rows]) {
 }
 
 /*
-  CSS RESEST By Andy Bell
+  CSS RESET By Andy Bell
   https://piccalil.li/blog/a-more-modern-css-reset/
-  CSS RESEST End
+  CSS RESET End
 */
 
 /* CUBE CSS */
@@ -215,6 +164,7 @@ textarea:not([rows]) {
 
 html {
   font-family: var(--fs-base);
+  font-size: var(--step-0);
 }
 
 h1,
@@ -225,23 +175,26 @@ h5,
 h6 {
   font-family: var(--ff-secondary);
   padding-inline: var(--space-s);
+  color: var(--clr-cool-gray);
 }
 
 h1 {
-  font-size: var(--step-4, 2.5rem);
+  font-size: var(--step-5, 3rem);
+  text-shadow: 0.5rem 0.25rem var(--clr-mauve);
 }
 
 h2 {
-  font-size: var(--step-3, 2.1rem);
+  font-size: var(--step-4, 2.5rem);
 }
 
 h3 {
-  font-size: var(--step-2, 1.7rem);
+  font-size: var(--step-3, 2.1rem);
 }
 
 p {
   padding-inline: var(--space-s);
   max-width: 75ch;
+  font-weight: var(--fw-500);
 }
 
 /*
@@ -255,16 +208,15 @@ p {
   - Create consistent flow and rhythm
 
   --- #What shouldn’t the composition layer do?
-  - Provide visual treatment such as colour or font style
+  - Provide visual treatment such as color or font style
   - Provide decorative styles such as shadows and patterns
   - Force a browser to generate a pixel-perfect layout instead of a flexible, progressive layout
 
 */
 
-.grid-300 {
+.grid {
   display: grid;
-  gap: var(--space-m, 1.5rem);
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl, 3.5rem);
 }
 
 .flex-col {
@@ -277,8 +229,19 @@ p {
   gap: var(--space-m, 1.5rem);
 }
 
+@media (min-width: 30rem) {
+  .flex-row-l {
+    display: flex;
+    gap: var(--space-m, 1.5rem);
+  }
+
+  .grid-300 {
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  }
+}
+
 /*
-  ---- Utlities ----
+  ---- Utilities ----
 
   --- #What should utilities do?
   - Simple, reusable styles (like margins, padding, colors, typography).
@@ -292,26 +255,44 @@ p {
   - Be used as a specificity hack. For example, setting all properties with !important - will undoubtedly cause problems in the long-run.
 */
 
+.bg-clr-primary {
+  background-color: var(--clr-cool-gray);
+}
+
+.bg-clr-secondary {
+  background-color: var(--clr-mauve);
+}
+
+.bg-clr-white {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-clr-black {
+  background-color: var(--clr-neutral-900);
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.margin-bottom-s {
+  margin-bottom: var(--space-s);
+}
+
 .margin-bottom-l {
   margin-bottom: var(--space-l);
 }
 
-.stack-s > * + * {
-  margin-block-start: var(--space-s, 1rem);
+.margin-inline {
+  margin-inline: 1rem;
 }
 
-.wrapper {
-  margin-inline: auto;
-  padding-inline: 1rem;
-  max-width: 95rem;
+.margin-zero {
+  margin: 0;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
-.space-center {
-  justify-content: center;
+.img-bottom-radius {
+  border-radius: 0 0 var(--space-xs, 1rem) var(--space-xs, 1rem);
 }
 
 .text-center {
@@ -319,11 +300,11 @@ p {
 }
 
 .text-clr-primary {
-  color: var(--clr-primary);
+  color: var(--clr-cool-gray);
 }
 
 .text-clr-secondary {
-  color: var(--clr-secondary);
+  color: var(--clr-mauve);
 }
 
 .text-clr-white {
@@ -334,20 +315,30 @@ p {
   color: var(--clr-neutral-900);
 }
 
-.bg-clr-primary {
-  background-color: var(--clr-primary);
+.padding-l {
+  padding: var(--space-l);
 }
 
-.bg-clr-secondary {
-  background-color: var(--clr-secondary);
+.list-none {
+  list-style: none;
 }
 
-.bg-clr-white {
-  background-color: var(--clr-neutral-100);
+.space-between {
+  justify-content: space-between;
 }
 
-.bg-clr-black {
-  background-color: var(--clr-neutral-900);
+.space-center {
+  justify-content: center;
+}
+
+.stack-s > * + * {
+  margin-block-start: var(--space-s, 1rem);
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 100rem;
 }
 
 /*
@@ -366,10 +357,25 @@ p {
 */
 
 .card {
-  width: 300px;
-  border: var(--space-3xs, 0.25rem) solid var(--clr-neutral-400);
+  border: var(--space-3xs, 0.25rem) solid var(--clr-mauve);
   border-radius: var(--space-s, 1rem);
-  box-shadow: 0 4px 6px var(--space-3xs, 0.25rem);
+  box-shadow: var(--space-xs, 0.75) var(--space-xs, 0.75rem) var(--clr-mauve-2);
+}
+
+.link {
+  font-family: var(--ff-secondary);
+  font-size: var(--step-1);
+  color: var(--clr-neutral-900);
+  border: var(--space-3xs, 0.25rem) solid var(--clr-mauve);
+  border-radius: var(--space-xs, 1rem);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.link:hover {
+  color: var(--clr-neutral-100);
+  border: var(--space-3xs, 0.25rem) solid var(--clr-neutral-100);
+  border-radius: var(--space-xs, 1rem);
 }
 
 /*
@@ -379,6 +385,6 @@ p {
   - Use data attributes
 
   --- #What shouldn’t an exception do?
-  - Variate a block to the point where it isn’t recognisable anymore. This is where a new block should be created
+  - Variate a block to the point where it isn’t recognizable anymore. This is where a new block should be created
   - Use CSS classes
 */
