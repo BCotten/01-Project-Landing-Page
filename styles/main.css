@@ -226,7 +226,7 @@ p {
 
 .flex-row {
   display: flex;
-  gap: var(--space-m, 1.5rem);
+  gap: var(--space-xs, 1.5rem);
 }
 
 @media (min-width: 30rem) {
@@ -242,17 +242,6 @@ p {
 
 /*
   ---- Utilities ----
-
-  --- #What should utilities do?
-  - Simple, reusable styles (like margins, padding, colors, typography).
-  - Helpers for alignment, display, and visibility.
-  - Apply a single CSS property, or a concise group of related properties to create   re-usable helpers
-  - Extend design tokens to maintain a single source of truth
-  - Abstract repeatability away from the CSS and apply it in the HTML instead
-
-  --- #What shouldn’t utilities do?
-  - Define a large group of unrelated CSS properties. For example, a utility that defined color, font-size and padding would make more sense to be a block.
-  - Be used as a specificity hack. For example, setting all properties with !important - will undoubtedly cause problems in the long-run.
 */
 
 .bg-clr-primary {
@@ -289,6 +278,10 @@ p {
 
 .margin-zero {
   margin: 0;
+}
+
+.padding-zero {
+  padding: 0;
 }
 
 .img-bottom-radius {
@@ -364,12 +357,12 @@ p {
 
 .link {
   font-family: var(--ff-secondary);
-  font-size: var(--step-1);
+  font-size: var(--step-0);
   color: var(--clr-neutral-900);
   border: var(--space-3xs, 0.25rem) solid var(--clr-mauve);
   border-radius: var(--space-xs, 1rem);
   text-decoration: none;
-  padding: 0.5rem;
+  padding: var(--space-2xs, 0.5rem);
 }
 
 .link:hover {
@@ -377,6 +370,14 @@ p {
   border: var(--space-3xs, 0.25rem) solid var(--clr-neutral-100);
   border-radius: var(--space-xs, 1rem);
 }
+
+@media (min-width: 30rem) {
+  .link {
+    font-size: var(--step-1);
+  }
+}
+
+
 
 /*
   ---- Exception ----
