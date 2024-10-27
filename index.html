@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <title>BCotten Landing Page</title>
   </head>
@@ -19,27 +19,53 @@
       <div class="[ ] [ wrapper text-center ] [ ] [ ]">
         <h2 class="[ ] [ text-clr-black margin-zero ] [ ] [ ]">Home</h2>
         <nav>
-          <ul class="[ flex-row list-none ] [ space-center padding-zero ] [ ] [ ]">
+          <ul
+            class="[ flex-row list-none ] [ space-center padding-zero ] [ ] [ ]"
+          >
             <li>
               <a class="[ ] [ ] [ link ] [ ]" href="#about">About</a>
             </li>
             <li>
               <a class="[ ] [ ] [ link ] [ ]" href="#projects">Projects</a>
             </li>
-            <li>
-              <a class="[ ] [ ] [ link ] [ ]" href="#contact">Contact</a>
-            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="[ ] [ margin-bottom-l margin-inline ] [ ] [ ]">
+    <main class="[ ] [ margin-bottom-l wrapper ] [ ] [ ]">
       <section id="about">
-        <div class="[ ] [ wrapper ] [ ] [ ]">
-          <h1>Brandon Cotten</h1>
-          <h2>About Me</h2>
-          <div class="[ ] [ flex-row-l ] [ ] [ ]">
+        <h1>Brandon Cotten</h1>
+        <h2>About Me</h2>
+        <div class="[ flex-row-l ] [ ] [ ] [ ]">
+          <p class="[ ] [ flex-one ] [ margin-bottom-s ] [ ]">
+            <!-- /* spell-checker: disable */ -->
+            I am Brandon Cotten, a front-end web developer based in the Fraser
+            Valley, B.C. I'm passionate about creating user-friendly and
+            visually appealing websites that provide great experiences for
+            users. With a strong background in HTML, CSS, and JavaScript, I
+            enjoy turning ideas into functional web applications. In addition to
+            my technical skills, I love keeping up with the latest design trends
+            and technologies to ensure my work remains modern and effective.
+            When I'm not coding, I enjoy exercising by doing Crossfit and
+            hiking. I also enjoy playing video or board games and reading.
+            <!-- spell-checker: enable */ -->
+          </p>
+          <div class="[ ] [ flex-one ] [ ] [ ]">
+            <img
+              class="[ ] [ ] [ ] [ ]"
+              src="images/mountain-river.jpg"
+              alt="A lush green forest one either side of a river with a view of a mountain in the background"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="[ ] [ margin-bottom-l ] [ ] [ ]">Projects</h2>
+        <div class="[ grid grid-300 ] [ space-center ] [ ] [ ]">
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>Country Website</h3>
             <p>
               <!-- /* spell-checker: disable */ -->
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
@@ -50,236 +76,166 @@
               inventore perferendis totam, rem similique.
               <!-- spell-checker: enable */ -->
             </p>
-            <img src="images/mountain-valley.jpg" alt="" />
+            <a href="#">
+              <img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+              />
+            </a>
           </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="[ ] [ wrapper ] [ ] [ ]">
-          <h2 class="[ ] [ margin-bottom-l ] [ ] [ ]">Projects</h2>
-          <div class="[ grid grid-300 ] [ space-center ] [ ] [ ]">
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>Country Website</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#">
-                <img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-                />
-              </a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>Business Website</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>JavaScript Game</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>Movie Database</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>Vancouver</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>Mindset</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>School</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>Shopify</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
-            <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
-              <h3>WooCommerce Store</h3>
-              <p>
-                <!-- /* spell-checker: disable */ -->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat harum dolore neque. Eum quis maxime alias neque fugit
-                aspernatur, cum molestiae. Velit fugit soluta molestiae illo?
-                Omnis aperiam recusandae, facilis, quod neque officia earum
-                consequuntur nostrum esse quisquam ad obcaecati assumenda.
-                Error, non? Odio eligendi inventore perferendis totam, rem
-                similique.
-                <!-- spell-checker: enable */ -->
-              </p>
-              <a href="#"
-                ><img
-                  class="[ ] [ img-bottom-radius ] [ ] [ ]"
-                  src="images/under-construction.jpg"
-                  alt="under construction sign with safety helmet and boxes"
-              /></a>
-            </div>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>Business Website</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
           </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="[ ] [ wrapper ] [ ] [ ]">
-          <h2 class="[ ] [ margin-bottom-s ] [ ] [ ]">Contact Me</h2>
-          <form class="[ ] [ ] [ ] [ ]" action="" method="">
-            <div>
-              <input
-                class="[ ] [ ] [ ] [ ]"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-              />
-              <input
-                class="[ ] [ ] [ ] [ ]"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-              />
-              <input
-                class="[ ] [ ] [ ] [ ]"
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-              />
-            </div>
-            <div>
-              <textarea
-                class="[ ] [ ] [ ] [ ]"
-                id="message"
-                name="message"
-                placeholder="Your message here..."
-              ></textarea>
-              <input class="[ ] [ ] [ ] [ ]" type="submit" value="Submit" />
-            </div>
-          </form>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>JavaScript Game</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
+          </div>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>Movie Database</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
+          </div>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>Vancouver</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
+          </div>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>Mindset</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
+          </div>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>School</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
+          </div>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>Shopify</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
+          </div>
+          <div class="[ flex-col ] [ stack-s space-between ] [ card ] [ ]">
+            <h3>WooCommerce Store</h3>
+            <p>
+              <!-- /* spell-checker: disable */ -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
+              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
+              recusandae, facilis, quod neque officia earum consequuntur nostrum
+              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
+              inventore perferendis totam, rem similique.
+              <!-- spell-checker: enable */ -->
+            </p>
+            <a href="#"
+              ><img
+                class="[ ] [ img-bottom-radius min-width-100 ] [ ] [ ]"
+                src="images/under-construction.jpg"
+                alt="under construction sign with safety helmet and boxes"
+            /></a>
+          </div>
         </div>
       </section>
     </main>
