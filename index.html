@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="bcotten" />
+    <link rel="manifest" href="site.webmanifest" />
     <!-- Link for Marker Font used for H1-H6 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +22,16 @@
   </head>
   <body class="[ ] [ margin-zero ] [ ]">
     <header class="[ ] [ bg-clr-secondary padding-l ] [ ]">
-      <div class="[ ] [ wrapper text-center ] [ ]">
-        <h2 class="[ ] [ text-clr-black margin-zero ] [ ]">Home</h2>
+      <div
+        class="[ flex-row-l ] [ wrapper text-center align-center space-between ] [ ]"
+      >
+        <img
+          class="[ ] [ ] [ nav-img ]"
+          src="images/Logo.svg"
+          alt="Logo of the page Bcotten above a mountain sketch"
+        />
         <nav>
-          <ul class="[ flex-row list-none ] [ space-center padding-zero ] [ ]">
+          <ul class="[ flex-row ] [ space-center padding-zero list-none ] [ ]">
             <li>
               <a class="[ ] [ ] [ link ]" href="#about">About</a>
             </li>
@@ -31,11 +43,11 @@
       </div>
     </header>
 
-    <main class="[ ] [ margin-bottom-l wrapper  ] [ ]">
+    <main class="[ ] [ margin-bottom-l wrapper ] [ ]">
       <section id="about">
         <h1>Brandon Cotten</h1>
         <h2>About Me</h2>
-        <div class="[ flex-row-l list-none ] [ ] [ ]">
+        <div class="[ flex-row-l ] [ list-none space-center ] [ ]">
           <p class="[ ] [ flex-one ] [ margin-bottom-s ]">
             <!-- /* spell-checker: disable */ -->
             I am Brandon Cotten, a front-end web developer based in the Fraser
@@ -64,20 +76,17 @@
           <li class="[ flex-col ] [ stack-s space-between ] [ card ]">
             <h3>Country Website</h3>
             <p>
-              <!-- /* spell-checker: disable */ -->
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
-              harum dolore neque. Eum quis maxime alias neque fugit aspernatur,
-              cum molestiae. Velit fugit soluta molestiae illo? Omnis aperiam
-              recusandae, facilis, quod neque officia earum consequuntur nostrum
-              esse quisquam ad obcaecati assumenda. Error, non? Odio eligendi
-              inventore perferendis totam, rem similique.
-              <!-- spell-checker: enable */ -->
+              This is a webpage about New Zealand that gives a summary about the
+              country on the home page. Several different destinations that are
+              possible to visit on the destinations page. Also a page about New
+              Zealand's national rugby team the All blacks as well as
+              information about them. Finally a reference and contact page.
             </p>
             <a href="#">
               <img
-                class="[ ] [ img-bottom-radius min-width-100 ] [ ]"
-                src="images/under-construction.jpg"
-                alt="under construction sign with safety helmet and boxes"
+                class="[ ] [ img-bottom-radius min-width-100 bg-clr-primary padding-top ] [ ]"
+                src="images/01-kiwi-flag.svg"
+                alt="A kiwi bird outline with the new zealand flag inside of it"
               />
             </a>
           </li>
@@ -119,7 +128,7 @@
                 alt="under construction sign with safety helmet and boxes"
             /></a>
           </li>
-          <div class="[ flex-col ] [ stack-s space-between ] [ card ]">
+          <li class="[ flex-col ] [ stack-s space-between ] [ card ]">
             <h3>Movie Database</h3>
             <p>
               <!-- /* spell-checker: disable */ -->
@@ -137,7 +146,7 @@
                 src="images/under-construction.jpg"
                 alt="under construction sign with safety helmet and boxes"
             /></a>
-          </div>
+          </li>
           <li class="[ flex-col ] [ stack-s space-between ] [ card ]">
             <h3>Vancouver</h3>
             <p>
